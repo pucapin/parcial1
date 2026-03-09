@@ -36,17 +36,8 @@ function App() {
 	const addNewDigimon = (e) => {
 		e.preventDefault();
 
-		if(nameInput == "") {
+		if(nameInput === "" || imageInput === "") {
 			setErrorMessage("Please fill out form!")
-			setNameInput("");
-			setImageInput("");
-			return;
-		}
-
-		if(imageInput == "") {
-			setErrorMessage("Please fill out form!")
-			setNameInput("");
-			setImageInput("");
 			return;
 		}
 		
